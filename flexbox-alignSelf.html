@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Flex-align-Self</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{padding: 0 0 0 40px;}
+            .container{
+                background: #eee;
+                
+                margin: 50px ;
+                padding: 10px;
+                border: 3px solid black;
+                height: 300px;
+
+                display: flex;
+                align-items: flex-start; 
+            }
+            .item1{
+                background: orangered;
+                align-self: stretch;
+            }
+            .item2{
+                background: yellowgreen;
+                align-self: flex-start;
+            }
+            .item3{
+                background: mediumpurple;
+                align-self:center;
+            }
+            .item4{
+                background: hotpink;
+                align-self: flex-end;
+            }
+            .item5{
+                background:black;
+                align-self: center;
+            }
+            .item6{
+                background: red;
+                align-self:flex-start;
+            }
+            .item7{
+                background: gray;
+                align-self: stretch;
+            }
+            
+            .items{ color: #fff;font-size: 20px;font-weight: bold ; 
+            text-align: center; padding: 10px; margin: 5px;
+            flex-grow: 1;}
+        </style>
+    </head>
+    <body>
+        <h1>Css Tutorial:Flex-Align-Self</h1>
+        <div class="container">
+            <div class="items item1">one</div>
+            <div class="items item2">Two</div>
+            <div class="items item3">Three</div>
+            <div class="items item4">Four</div>
+            <div class="items item5">Five</div>
+            <div class="items item6">Six</div>
+            <div class="items item7">Seven</div>
+           
+        </div>
+    </body>
+</html>

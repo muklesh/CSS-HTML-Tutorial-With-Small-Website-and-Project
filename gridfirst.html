@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Gridfirst</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+               
+            }
+            .box{
+                width: 650px;
+                background: black;
+                margin: 50px auto 0;
+
+                display: grid;
+                grid-template-columns:repeat(2,1fr);
+                grid-template-rows: repeat(2,150px);
+                grid-gap: 10px;
+            }
+            .box1{
+                background: tomato;
+            }
+            .box2{
+                background:royalblue;
+            }
+            .box3{
+                background: yellowgreen;
+
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+
+            }
+            .box3 > div{
+                background: #fff;
+                color: red;
+                margin: 10px;
+            }
+            .box4{
+                background: gray;
+            }
+            .box5{
+                background: orange;
+            }
+            .box6{
+                background: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Css Tuotrial:Grid</h1>
+        <div class="box">
+            <div class="box1">First</div>
+            <div class="box2">Second</div>
+            <div class="box3">
+                <div class="subbox1">A</div>
+                <div class="subbox2">B</div>
+                <div class="subbox3">C</div>
+            </div>
+            <div class="box4">Fourth</div>
+        </div>
+    </body>
+</html>

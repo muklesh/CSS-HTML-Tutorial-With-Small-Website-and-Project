@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Object-fit</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container{
+                width: 70%;
+                margin: 0 auto;
+            }
+            .clearfix{
+                clear: both;
+            }
+            .box{
+                width: 32%;
+                border: 2px solid black;
+                float: left;
+                box-sizing: border-box;
+                padding: 10px;
+                margin-right: 2%;
+                margin-bottom: 13px;
+            }
+            .box img{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: bottom;
+            }
+            .last{
+                margin-right: 0;
+            }
+            @media screen and (max-width: 950px){
+                .box{
+                    width: 48%;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                .box{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="margin-bottom:50px;">Css Tutorial:Object-Fit</h1>
+        <div class="container">
+            <div class="box">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+            <p>Google, LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. It is considered one of the Big Five technology companies in the U.S. information technology industry, alongside Amazon, Facebook, Apple, and Microsoft.</p>
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/200/300" alt="">
+            <p>Google, LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. It is considered one of the Big Five technology companies in the U.S. information technology industry, alongside Amazon, Facebook, Apple, and Microsoft.</p>
+        </div>
+        <div class="box last">
+            <img src="https://picsum.photos/id/237/200/300" alt="">
+            <p>Google, LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware. It is considered one of the Big Five technology companies in the U.S. information technology industry, alongside Amazon, Facebook, Apple, and Microsoft.</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    </body>
+</html>

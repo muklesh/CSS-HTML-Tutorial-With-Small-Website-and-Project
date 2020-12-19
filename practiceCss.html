@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 650px;
+            background: black;
+            margin: 50px auto 0;
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+           grid-template-rows: repeat(2,150px);
+           grid-gap: 10px;
+           justify-content: space-evenly;
+
+        }
+        .item1{
+            background: red;
+           
+        }
+        .item2{
+            background:tomato;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            
+        }
+        .item2 > div{
+            background: white;
+            color: red;
+            margin: 10px;
+        }
+        .item3{
+            background:yellow;
+        }
+        .item4{
+            background: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Css Tutorial:Grid</h1>
+        <div class="container">
+            <div class="item1">First</div>
+            <div class="item2">
+                <div class="subitem1">A</div>
+                <div class="subitem2">B</div>
+                <div class="subitem3">C</div>
+            </div>
+            <div class="item3">Third </div>
+            <div class="item4">Fourth</div>
+        </div>
+</body>
+</html>
